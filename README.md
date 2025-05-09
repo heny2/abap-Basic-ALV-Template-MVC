@@ -64,6 +64,10 @@ ENDCLASS.
 
 ## 2.实例化 zcl_bc_alv_application 并将 model 传入
 ``` abap
+START-OF-SELECTION.
+  " 实例化 ZCL_BC_ALV_APPLICATION
+  PERFORM frm_execute_fcode.
+
 FORM frm_execute_fcode .
   DATA lo_application   TYPE REF TO zcl_bc_alv_application.
   DATA ls_container_set TYPE zsbc_container_setting.
